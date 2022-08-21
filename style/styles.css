@@ -1,5 +1,6 @@
 :root {
   --main-color: #6c63ff;
+  --two-color: #272142;
 }
 
 body {
@@ -26,7 +27,8 @@ h6 {
 }
 
 .hero {
-  padding: 175px 270px;
+  padding-top: 175px;
+  padding-bottom: 270px;
 }
 
 .hero p {
@@ -43,7 +45,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: normal;
-  color: #272142;
+  color: var(--two-color);
   margin-top: 20px;
 }
 
@@ -60,4 +62,75 @@ h2 {
 
 .hero button {
   margin-top: 50px;
+}
+
+.section-text {
+  font-size: 18px;
+  text-align: center;
+  margin: 115px 70px;
+}
+h3 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.weather-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--two-color);
+  opacity: 70%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.weather-app {
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  width: 200px;
+  font-size: 16px;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+.weather-app:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.section-row {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1000px) {
+  h3 {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .section-row {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .hero {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+  .section-text {
+    margin: 10px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  .hero p {
+    font-size: 26px;
+  }
 }
