@@ -1,0 +1,72 @@
+:root {
+  --main-color: #6c63ff;
+  --two-color: #272142;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #f9f7fe;
+}
+
+header {
+  max-width: 1135px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 37px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 64px;
+  max-width: 825px;
+  text-align: start;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+
+.containerAll {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-project {
+  max-width: 560px;
+  height: 642px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(39, 33, 66, 3%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  transition: 1s;
+}
+
+.foto:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 766px) {
+  h1 {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
